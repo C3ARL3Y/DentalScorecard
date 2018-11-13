@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		705DDFF502EFFAF8887F69B8 /* Pods_DentalScorecardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C04023AF9C435EDB1393BFD0 /* Pods_DentalScorecardTests.framework */; };
+		A52C5670218ECC0E009F86E4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C566F218ECC0E009F86E4 /* MainViewController.swift */; };
+		A54B88412191080800A7BF0B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54B88402191080800A7BF0B /* AuthService.swift */; };
+		A5768D47218377FC00F207B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5768D46218377FC00F207B4 /* GoogleService-Info.plist */; };
+		A5796E0E218C0CE5001524FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5796E0D218C0CE5001524FC /* LoginViewController.swift */; };
 		A5EE6AA9216AB4D900AD731E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EE6AA8216AB4D900AD731E /* AppDelegate.swift */; };
 		A5EE6AAB216AB4D900AD731E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EE6AAA216AB4D900AD731E /* ViewController.swift */; };
 		A5EE6AAE216AB4D900AD731E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5EE6AAC216AB4D900AD731E /* Main.storyboard */; };
@@ -14,6 +19,8 @@
 		A5EE6AB3216AB4DA00AD731E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5EE6AB1216AB4DA00AD731E /* LaunchScreen.storyboard */; };
 		A5EE6ABE216AB4DB00AD731E /* DentalScorecardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EE6ABD216AB4DB00AD731E /* DentalScorecardTests.swift */; };
 		A5EE6AC9216AB4DB00AD731E /* DentalScorecardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EE6AC8216AB4DB00AD731E /* DentalScorecardUITests.swift */; };
+		BC40BF91AB38ED1C04510275 /* Pods_DentalScorecard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29B465CDC7F23BB237FE31D /* Pods_DentalScorecard.framework */; };
+		D49C28C0AAB60698775347BF /* Pods_DentalScorecardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB1711B2D0C097A3D9386E0 /* Pods_DentalScorecardUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22CA177950DBADE20093620C /* Pods-DentalScorecardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DentalScorecardUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DentalScorecardUITests/Pods-DentalScorecardUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		55FF5EB252E2640C708979EB /* Pods-DentalScorecard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DentalScorecard.release.xcconfig"; path = "Pods/Target Support Files/Pods-DentalScorecard/Pods-DentalScorecard.release.xcconfig"; sourceTree = "<group>"; };
+		7FB1711B2D0C097A3D9386E0 /* Pods_DentalScorecardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DentalScorecardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		968D6F575D91554B373EA3B2 /* Pods-DentalScorecardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DentalScorecardUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DentalScorecardUITests/Pods-DentalScorecardUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A52C566F218ECC0E009F86E4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A54B88402191080800A7BF0B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		A5768D46218377FC00F207B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A5796E0D218C0CE5001524FC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A5EE6AA5216AB4D900AD731E /* DentalScorecard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DentalScorecard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EE6AA8216AB4D900AD731E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5EE6AAA216AB4D900AD731E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +62,11 @@
 		A5EE6AC4216AB4DB00AD731E /* DentalScorecardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DentalScorecardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EE6AC8216AB4DB00AD731E /* DentalScorecardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentalScorecardUITests.swift; sourceTree = "<group>"; };
 		A5EE6ACA216AB4DB00AD731E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFFE0A5EDE985E8FF2AA7EFB /* Pods-DentalScorecard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DentalScorecard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DentalScorecard/Pods-DentalScorecard.debug.xcconfig"; sourceTree = "<group>"; };
+		B4272E64D61A5875F3905AA5 /* Pods-DentalScorecardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DentalScorecardTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DentalScorecardTests/Pods-DentalScorecardTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C04023AF9C435EDB1393BFD0 /* Pods_DentalScorecardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DentalScorecardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C29B465CDC7F23BB237FE31D /* Pods_DentalScorecard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DentalScorecard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC1BFE18160DE24C7F622D45 /* Pods-DentalScorecardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DentalScorecardTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DentalScorecardTests/Pods-DentalScorecardTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC40BF91AB38ED1C04510275 /* Pods_DentalScorecard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				705DDFF502EFFAF8887F69B8 /* Pods_DentalScorecardTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +90,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49C28C0AAB60698775347BF /* Pods_DentalScorecardUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37DC788C5916216DA57AF980 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFFE0A5EDE985E8FF2AA7EFB /* Pods-DentalScorecard.debug.xcconfig */,
+				55FF5EB252E2640C708979EB /* Pods-DentalScorecard.release.xcconfig */,
+				B4272E64D61A5875F3905AA5 /* Pods-DentalScorecardTests.debug.xcconfig */,
+				DC1BFE18160DE24C7F622D45 /* Pods-DentalScorecardTests.release.xcconfig */,
+				22CA177950DBADE20093620C /* Pods-DentalScorecardUITests.debug.xcconfig */,
+				968D6F575D91554B373EA3B2 /* Pods-DentalScorecardUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A5EE6A9C216AB4D900AD731E = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +117,8 @@
 				A5EE6ABC216AB4DB00AD731E /* DentalScorecardTests */,
 				A5EE6AC7216AB4DB00AD731E /* DentalScorecardUITests */,
 				A5EE6AA6216AB4D900AD731E /* Products */,
+				37DC788C5916216DA57AF980 /* Pods */,
+				BC007CD7C120EDF5CA76A29A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +136,15 @@
 			isa = PBXGroup;
 			children = (
 				A5EE6AA8216AB4D900AD731E /* AppDelegate.swift */,
+				A52C566F218ECC0E009F86E4 /* MainViewController.swift */,
 				A5EE6AAA216AB4D900AD731E /* ViewController.swift */,
 				A5EE6AAC216AB4D900AD731E /* Main.storyboard */,
 				A5EE6AAF216AB4DA00AD731E /* Assets.xcassets */,
 				A5EE6AB1216AB4DA00AD731E /* LaunchScreen.storyboard */,
 				A5EE6AB4216AB4DA00AD731E /* Info.plist */,
+				A5768D46218377FC00F207B4 /* GoogleService-Info.plist */,
+				A5796E0D218C0CE5001524FC /* LoginViewController.swift */,
+				A54B88402191080800A7BF0B /* AuthService.swift */,
 			);
 			path = DentalScorecard;
 			sourceTree = "<group>";
@@ -125,6 +167,16 @@
 			path = DentalScorecardUITests;
 			sourceTree = "<group>";
 		};
+		BC007CD7C120EDF5CA76A29A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C29B465CDC7F23BB237FE31D /* Pods_DentalScorecard.framework */,
+				C04023AF9C435EDB1393BFD0 /* Pods_DentalScorecardTests.framework */,
+				7FB1711B2D0C097A3D9386E0 /* Pods_DentalScorecardUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5EE6ACD216AB4DB00AD731E /* Build configuration list for PBXNativeTarget "DentalScorecard" */;
 			buildPhases = (
+				52C77E37601393E0F565BABB /* [CP] Check Pods Manifest.lock */,
 				A5EE6AA1216AB4D900AD731E /* Sources */,
 				A5EE6AA2216AB4D900AD731E /* Frameworks */,
 				A5EE6AA3216AB4D900AD731E /* Resources */,
+				4712630DECC55FE05B8B283F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5EE6AD0216AB4DB00AD731E /* Build configuration list for PBXNativeTarget "DentalScorecardTests" */;
 			buildPhases = (
+				C222CFAF3AAF057552315CCC /* [CP] Check Pods Manifest.lock */,
 				A5EE6AB5216AB4DA00AD731E /* Sources */,
 				A5EE6AB6216AB4DA00AD731E /* Frameworks */,
 				A5EE6AB7216AB4DA00AD731E /* Resources */,
@@ -167,6 +222,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5EE6AD3216AB4DB00AD731E /* Build configuration list for PBXNativeTarget "DentalScorecardUITests" */;
 			buildPhases = (
+				273523FD3CC07FFD42DB57F4 /* [CP] Check Pods Manifest.lock */,
 				A5EE6AC0216AB4DB00AD731E /* Sources */,
 				A5EE6AC1216AB4DB00AD731E /* Frameworks */,
 				A5EE6AC2216AB4DB00AD731E /* Resources */,
@@ -230,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5EE6AB3216AB4DA00AD731E /* LaunchScreen.storyboard in Resources */,
+				A5768D47218377FC00F207B4 /* GoogleService-Info.plist in Resources */,
 				A5EE6AB0216AB4DA00AD731E /* Assets.xcassets in Resources */,
 				A5EE6AAE216AB4D900AD731E /* Main.storyboard in Resources */,
 			);
@@ -251,13 +308,113 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		273523FD3CC07FFD42DB57F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DentalScorecardUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4712630DECC55FE05B8B283F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DentalScorecard/Pods-DentalScorecard-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DentalScorecard/Pods-DentalScorecard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52C77E37601393E0F565BABB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DentalScorecard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C222CFAF3AAF057552315CCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DentalScorecardTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A5EE6AA1216AB4D900AD731E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5796E0E218C0CE5001524FC /* LoginViewController.swift in Sources */,
 				A5EE6AAB216AB4D900AD731E /* ViewController.swift in Sources */,
+				A54B88412191080800A7BF0B /* AuthService.swift in Sources */,
 				A5EE6AA9216AB4D900AD731E /* AppDelegate.swift in Sources */,
+				A52C5670218ECC0E009F86E4 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +587,7 @@
 		};
 		A5EE6ACE216AB4DB00AD731E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFFE0A5EDE985E8FF2AA7EFB /* Pods-DentalScorecard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +607,7 @@
 		};
 		A5EE6ACF216AB4DB00AD731E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55FF5EB252E2640C708979EB /* Pods-DentalScorecard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +627,7 @@
 		};
 		A5EE6AD1216AB4DB00AD731E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4272E64D61A5875F3905AA5 /* Pods-DentalScorecardTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -489,6 +649,7 @@
 		};
 		A5EE6AD2216AB4DB00AD731E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC1BFE18160DE24C7F622D45 /* Pods-DentalScorecardTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +671,7 @@
 		};
 		A5EE6AD4216AB4DB00AD731E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22CA177950DBADE20093620C /* Pods-DentalScorecardUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +692,7 @@
 		};
 		A5EE6AD5216AB4DB00AD731E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 968D6F575D91554B373EA3B2 /* Pods-DentalScorecardUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
