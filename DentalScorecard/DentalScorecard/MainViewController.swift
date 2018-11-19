@@ -598,6 +598,8 @@ class MainViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .left
         label.backgroundColor = UIColor.white
+        label.lineBreakMode = .byWordWrapping // notice the 'b' instead of 'B'
+        label.numberOfLines = 0
         
         return label
     }()
@@ -645,6 +647,8 @@ class MainViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .left
         label.backgroundColor = UIColor.white
+        label.lineBreakMode = .byWordWrapping // notice the 'b' instead of 'B'
+        label.numberOfLines = 0
         
         return label
     }()
@@ -680,6 +684,8 @@ class MainViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .left
         label.backgroundColor = UIColor.white
+        label.lineBreakMode = .byWordWrapping // notice the 'b' instead of 'B'
+        label.numberOfLines = 0
         
         return label
     }()
@@ -718,6 +724,8 @@ class MainViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .left
         label.backgroundColor = UIColor.white
+        label.lineBreakMode = .byWordWrapping // notice the 'b' instead of 'B'
+        label.numberOfLines = 0
         
         return label
     }()
@@ -753,6 +761,8 @@ class MainViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .left
         label.backgroundColor = UIColor.white
+        label.lineBreakMode = .byWordWrapping // notice the 'b' instead of 'B'
+        label.numberOfLines = 0
         
         return label
     }()
@@ -788,6 +798,8 @@ class MainViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .left
         label.backgroundColor = UIColor.white
+        label.lineBreakMode = .byCharWrapping // notice the 'b' instead of 'B'
+        label.numberOfLines = 2
         
         return label
     }()
@@ -1275,6 +1287,8 @@ class MainViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .left
         label.backgroundColor = UIColor.white
+        label.lineBreakMode = .byClipping
+        label.numberOfLines = 0
         
         return label
     }()
@@ -1310,6 +1324,8 @@ class MainViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .left
         label.backgroundColor = UIColor.white
+        label.lineBreakMode = .byClipping
+        label.numberOfLines = 0
         
         return label
     }()
@@ -1345,6 +1361,8 @@ class MainViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .left
         label.backgroundColor = UIColor.white
+        label.lineBreakMode = .byClipping
+        label.numberOfLines = 0
         
         return label
     }()
@@ -3321,6 +3339,225 @@ class MainViewController: UIViewController {
         return button
     }()
     
+    let jessicaLbl: UILabel = {
+        let label = UILabel()
+        
+        label.text = "Jessica"
+        label.font = UIFont(name: "AmericanTypewriter-Bold ", size: 28)
+        label.textColor = UIColor(r: 57, g: 125, b: 161)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .left
+        label.layer.zPosition = 2
+        
+        return label
+    }()
+    
+    let amountPresentedTextField7: UITextField = {
+        let textField  = UITextField()
+        
+        textField.placeholder = "$"
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.backgroundColor = UIColor.white
+        textField.keyboardType = .numberPad
+        
+        return textField
+    }()
+    
+    let amountAcceptedTextField7: UITextField = {
+        let textField  = UITextField()
+        
+        textField.placeholder = "$"
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.backgroundColor = UIColor.white
+        textField.keyboardType = .numberPad
+        
+        return textField
+    }()
+    
+    let percentOfDollarAmountScheduledTextField7: UITextField = {
+        let textField  = UITextField()
+        
+        textField.placeholder = "%"
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.backgroundColor = UIColor.white
+        textField.keyboardType = .numberPad
+        
+        return textField
+    }()
+    
+    let numberPatientsAcceptedTreatmentTextField7: UITextField = {
+        let textField  = UITextField()
+        
+        textField.placeholder = "#"
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.backgroundColor = UIColor.white
+        textField.keyboardType = .numberPad
+        
+        return textField
+    }()
+    
+    let numberPatientsPresentedTreatmentTextField7: UITextField = {
+        let textField  = UITextField()
+        
+        textField.placeholder = "#"
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.backgroundColor = UIColor.white
+        textField.keyboardType = .numberPad
+        
+        return textField
+    }()
+    
+    let percentPatientsAcceptedTreatmentTextField7: UITextField = {
+        let textField  = UITextField()
+        
+        textField.placeholder = "%"
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.backgroundColor = UIColor.white
+        textField.keyboardType = .numberPad
+        
+        return textField
+    }()
+    
+    let scheduledAppointmentsLbl: UILabel = {
+        let label = UILabel()
+        
+        label.text = "Scheduled Appointments"
+        label.font = UIFont(name: "AmericanTypewriter", size: 28)
+        label.textColor = UIColor.black
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .left
+        label.backgroundColor = UIColor.white
+        
+        return label
+    }()
+    
+    let scheduledAppointmentsLbl2: UILabel = {
+        let label = UILabel()
+        
+        label.text = "Scheduled Appointments"
+        label.font = UIFont(name: "AmericanTypewriter", size: 28)
+        label.textColor = UIColor.black
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .left
+        label.backgroundColor = UIColor.white
+        
+        return label
+    }()
+    
+    let scheduledAppointmentsTextField1: UITextField = {
+       let textField = UITextField()
+        
+        textField.placeholder = "#"
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.backgroundColor = UIColor.white
+        textField.keyboardType = .numberPad
+        
+        return textField
+    }()
+    
+    let scheduledAppointmentsTextField2: UITextField = {
+        let textField = UITextField()
+        
+        textField.placeholder = "#"
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.backgroundColor = UIColor.white
+        textField.keyboardType = .numberPad
+        
+        return textField
+    }()
+    
+    let scheduledAppointmentsTextField3: UITextField = {
+        let textField = UITextField()
+        
+        textField.placeholder = "#"
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.backgroundColor = UIColor.white
+        textField.keyboardType = .numberPad
+        
+        return textField
+    }()
+    
+    let scheduledAppointmentsTextField4: UITextField = {
+        let textField = UITextField()
+        
+        textField.placeholder = "#"
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.backgroundColor = UIColor.white
+        textField.keyboardType = .numberPad
+        
+        return textField
+    }()
+    
+    let appointmentsKeptLbl: UILabel = {
+        let label = UILabel()
+        
+        label.text = "Appointments Kept"
+        label.font = UIFont(name: "AmericanTypewriter", size: 28)
+        label.textColor = UIColor.black
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .left
+        label.backgroundColor = UIColor.white
+        
+        return label
+    }()
+    
+    let appointmentsKeptLbl2: UILabel = {
+        let label = UILabel()
+        
+        label.text = "Appointments Kept"
+        label.font = UIFont(name: "AmericanTypewriter", size: 28)
+        label.textColor = UIColor.black
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .left
+        label.backgroundColor = UIColor.white
+        
+        return label
+    }()
+    
+    let appointmentsKeptTextField1: UITextField = {
+       let textField = UITextField()
+        
+        textField.placeholder = "#"
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.backgroundColor = UIColor.white
+        textField.keyboardType = .numberPad
+        
+        return textField
+    }()
+    
+    let appointmentsKeptTextField2: UITextField = {
+        let textField = UITextField()
+        
+        textField.placeholder = "#"
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.backgroundColor = UIColor.white
+        textField.keyboardType = .numberPad
+        
+        return textField
+    }()
+    
+    let appointmentsKeptTextField3: UITextField = {
+        let textField = UITextField()
+        
+        textField.placeholder = "#"
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.backgroundColor = UIColor.white
+        textField.keyboardType = .numberPad
+        
+        return textField
+    }()
+    
+    let appointmentsKeptTextField4: UITextField = {
+        let textField = UITextField()
+        
+        textField.placeholder = "#"
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.backgroundColor = UIColor.white
+        textField.keyboardType = .numberPad
+        
+        return textField
+    }()
+    
     let woodstockNetProductionRef = Database.database().reference().child("WoodstockNetProduction")
     let woodstockCollectionsRef = Database.database().reference().child("WoodstockCollections")
     let woodstockInsuranceCollectionsRef = Database.database().reference().child("WoodstockInsuranceCollections")
@@ -3385,6 +3622,13 @@ class MainViewController: UIViewController {
     let annaNumberOfPatientsAcceptedTreatmentRef = Database.database().reference().child("AnnaNumberOfPatientsAcceptedTreatment")
     let annaPercentOfPatientAcceptedTreatmentRef = Database.database().reference().child("AnnaPercentOfPatientsAcceptedTreatment")
     
+    let jessicaAmountPresentedRef = Database.database().reference().child("JessicaAmountPresented")
+    let jessicaAmountAcceptedRef = Database.database().reference().child("JessicaAmountAccepted")
+    let jessicaPercentOfDollarAmountScheduledRef = Database.database().reference().child("JessicaPercentOfDollarAmountScheduled")
+    let jessicaNumberOfPatientsPresentedTreatmentRef = Database.database().reference().child("JessicaNumberOfPatientsPresentedTreatment")
+    let jessicaNumberOfPatientsAcceptedTreatmentRef = Database.database().reference().child("JessicaNumberOfPatientsAcceptedTreatment")
+    let jessicaPercentOfPatientAcceptedTreatmentRef = Database.database().reference().child("JessicaPercentOfPatientsAcceptedTreatment")
+    
     let drVGoalRef = Database.database().reference().child("DrVGoal")
     let drVNetProductionRef = Database.database().reference().child("DrVNetProduction")
     let drVDaysWorkedRef = Database.database().reference().child("DrVDaysWorked")
@@ -3393,6 +3637,8 @@ class MainViewController: UIViewController {
     let drVDollarAmountSameDayTreatmentRef = Database.database().reference().child("DrVDollarAmountSameDayTreatment")
     let drVPercentAppointmentsKeptRef = Database.database().reference().child("DrVPercentAppointmentsKept")
     let drVRetentionRateRef = Database.database().reference().child("DrVRetentionRate")
+    let drVScheduledAppointmentsRef = Database.database().reference().child("DrVScheduledAppointments")
+    let drVAppointmentsKeptRef = Database.database().reference().child("DrVAppointmentsKept")
     
     let drMcreeGoalRef = Database.database().reference().child("DrMcreeGoal")
     let drMcreeNetProductionRef = Database.database().reference().child("DrMcreeNetProduction")
@@ -3400,6 +3646,8 @@ class MainViewController: UIViewController {
     let drMcreeProductionPerDayRef = Database.database().reference().child("DrMcreeProductionPerDay")
     let drMcreeProductionPerHourRef = Database.database().reference().child("DrMcreeProductionPerHour")
     let drMcreeDollarAmountSameDayTreatmentRef = Database.database().reference().child("DrMcreeDollarAmountSameDayTreatment")
+    let drMcreeScheduledAppointmentsRef = Database.database().reference().child("DrMcreeScheduledAppointments")
+    let drMcreeAppointmentsKeptRef = Database.database().reference().child("DrMcreeAppointmentsKept")
     let drMcreePercentAppointmentsKeptRef = Database.database().reference().child("DrMcreePercentAppointmentsKept")
     let drMcreeRetentionRateRef = Database.database().reference().child("DrMcreeRetentionRate")
     
@@ -3409,6 +3657,8 @@ class MainViewController: UIViewController {
     let drOrzaProductionPerDayRef = Database.database().reference().child("DrOrzaProductionPerDay")
     let drOrzaProductionPerHourRef = Database.database().reference().child("DrOrzaProductionPerHour")
     let drOrzaDollarAmountSameDayTreatmentRef = Database.database().reference().child("DrOrzaDollarAmountSameDayTreatment")
+    let drOrzaScheduledAppointmentsRef = Database.database().reference().child("DrOrzaScheduledAppointments")
+    let drOrzaAppointmentsKeptRef = Database.database().reference().child("DrOrzaAppointmentsKept")
     let drOrzaPercentAppointmentsKeptRef = Database.database().reference().child("DrOrzaPercentAppointmentsKept")
     let drOrzaRetentionRateRef = Database.database().reference().child("DrOrzaRetentionRate")
     
@@ -3418,6 +3668,8 @@ class MainViewController: UIViewController {
     let drFranProductionPerDayRef = Database.database().reference().child("DrFranProductionPerDay")
     let drFranProductionPerHourRef = Database.database().reference().child("DrFranProductionPerHour")
     let drFranDollarAmountSameDayTreatmentRef = Database.database().reference().child("DrFranDollarAmountSameDayTreatment")
+    let drFranScheduledAppointmentsRef = Database.database().reference().child("DrFranScheduledAppointments")
+    let drFranAppointmentsKeptRef = Database.database().reference().child("DrFranAppointmentsKept")
     let drFranPercentAppointmentsKeptRef = Database.database().reference().child("DrFranPercentAppointmentsKept")
     let drFranRetentionRateRef = Database.database().reference().child("DrFranRetentionRate")
     
@@ -3500,6 +3752,61 @@ class MainViewController: UIViewController {
     var sessionKennesawOTCCollectionsValue: Double = 0.0
     var sessionKennesawInsuranceCollectionsValue: Double = 0.0
     var sessionKennesawNetProductionValue: Double = 0.0
+    
+    var sessionHollyAmountPresentedValue: Double = 0.0
+    var sessionHollyAmountAcceptedValue: Double = 0.0
+    var sessionHollyPatientsPresesntedValue: Double = 0.0
+    var sessionHollyPatientsAcceptedValue: Double = 0.0
+    
+    var sessionSydneyAmountPresentedValue: Double = 0.0
+    var sessionSydneyAmountAcceptedValue: Double = 0.0
+    var sessionSydneyPatientsPresesntedValue: Double = 0.0
+    var sessionSydneyPatientsAcceptedValue: Double = 0.0
+    
+    var sessionAmandaAmountPresentedValue: Double = 0.0
+    var sessionAmandaAmountAcceptedValue: Double = 0.0
+    var sessionAmandaPatientsPresesntedValue: Double = 0.0
+    var sessionAmandaPatientsAcceptedValue: Double = 0.0
+   
+    var sessionAshleyGAmountPresentedValue: Double = 0.0
+    var sessionAshleyGAmountAcceptedValue: Double = 0.0
+    var sessionAshleyGPatientsPresesntedValue: Double = 0.0
+    var sessionAshleyGPatientsAcceptedValue: Double = 0.0
+    
+    var sessionDebbieDAmountPresentedValue: Double = 0.0
+    var sessionDebbieDAmountAcceptedValue: Double = 0.0
+    var sessionDebbieDPatientsPresesntedValue: Double = 0.0
+    var sessionDebbieDPatientsAcceptedValue: Double = 0.0
+   
+    var sessionAnnaCAmountPresentedValue: Double = 0.0
+    var sessionAnnaCAmountAcceptedValue: Double = 0.0
+    var sessionAnnaCPatientsPresesntedValue: Double = 0.0
+    var sessionAnnaCPatientsAcceptedValue: Double = 0.0
+    
+    var sessionJessicaAmountPresentedValue: Double = 0.0
+    var sessionJessicaAmountAcceptedValue: Double = 0.0
+    var sessionJessicaPatientsPresesntedValue: Double = 0.0
+    var sessionJessicaPatientsAcceptedValue: Double = 0.0
+    
+    var sessionDrVNetProductionValue: Int = 0
+    var sessionDrVDaysWorkedValue: Int = 0
+    var sessionDrVScheduledAppointmentsValue: Double = 0.0
+    var sessionDrVAppointmentsKeptValue: Double = 0.0
+    
+    var sessionDrMcreeNetProductionValue: Int = 0
+    var sessionDrMcreeDaysWorkedValue: Int = 0
+    var sessionDrMcreeScheduledAppointmentsValue: Double = 0.0
+    var sessionDrMcreeAppointmentsKeptValue: Double = 0.0
+    
+    var sessionDrOrzaNetProductionValue: Int = 0
+    var sessionDrOrzaDaysWorkedValue: Int = 0
+    var sessionDrOrzaScheduledAppointmentsValue: Double = 0.0
+    var sessionDrOrzaAppointmentsKeptValue: Double = 0.0
+    
+    var sessionDrFranNetProductionValue: Int = 0
+    var sessionDrFranDaysWorkedValue: Int = 0
+    var sessionDrFranScheduledAppointmentsValue: Double = 0.0
+    var sessionDrFranAppointmentsKeptValue: Double = 0.0
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
@@ -3856,6 +4163,28 @@ class MainViewController: UIViewController {
         scrollView.addSubview(arestinPercentTextField5)
         scrollView.addSubview(reappointmentRateTextField5)
         scrollView.addSubview(retentionRateTextField9)
+        scrollView.addSubview(jessicaLbl)
+        
+        scrollView.addSubview(amountPresentedTextField7)
+        scrollView.addSubview(amountAcceptedTextField7)
+        scrollView.addSubview(percentOfDollarAmountScheduledTextField7)
+        scrollView.addSubview(numberPatientsPresentedTreatmentTextField7)
+        scrollView.addSubview(numberPatientsAcceptedTreatmentTextField7)
+        scrollView.addSubview(percentPatientsAcceptedTreatmentTextField7)
+        
+        scrollView.addSubview(scheduledAppointmentsLbl)
+        scrollView.addSubview(scheduledAppointmentsLbl2)
+        scrollView.addSubview(scheduledAppointmentsTextField1)
+        scrollView.addSubview(scheduledAppointmentsTextField2)
+        scrollView.addSubview(scheduledAppointmentsTextField3)
+        scrollView.addSubview(scheduledAppointmentsTextField4)
+        
+        scrollView.addSubview(appointmentsKeptLbl)
+        scrollView.addSubview(appointmentsKeptLbl2)
+        scrollView.addSubview(appointmentsKeptTextField1)
+        scrollView.addSubview(appointmentsKeptTextField2)
+        scrollView.addSubview(appointmentsKeptTextField3)
+        scrollView.addSubview(appointmentsKeptTextField4)
         
         categoryHighlight1.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
         categoryHighlight1.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 10).isActive = true
@@ -4321,115 +4650,107 @@ class MainViewController: UIViewController {
         
         treatmentCoordinatorsLbl3.leftAnchor.constraint(equalTo: categoryHighlight4.leftAnchor, constant: 5).isActive = true
         treatmentCoordinatorsLbl3.centerYAnchor.constraint(equalTo: categoryHighlight4.centerYAnchor).isActive = true
-        treatmentCoordinatorsLbl3.font = UIFont(name: "AmericanTypewriter-Bold", size: self.view.frame.width * 0.025)
+        treatmentCoordinatorsLbl3.font = UIFont(name: "AmericanTypewriter-Bold", size: self.view.frame.width * 0.02)
         
-        categoryDivider8.centerXAnchor.constraint(equalTo: scrollView.leftAnchor, constant: view.frame.width * 0.4).isActive = true
+        categoryDivider8.centerXAnchor.constraint(equalTo: amountPresentedLbl3.leftAnchor, constant: view.frame.width * 0.3).isActive = true
         categoryDivider8.topAnchor.constraint(equalTo: categoryDivider7.bottomAnchor, constant: 0).isActive = true
         categoryDivider8.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.001).isActive = true
-        categoryDivider8.heightAnchor.constraint(equalTo: scrollView.heightAnchor, multiplier: 0.48).isActive = true
-        
-        debbieDLbl.leftAnchor.constraint(equalTo: categoryDivider8.leftAnchor, constant: 5).isActive = true
-        debbieDLbl.centerYAnchor.constraint(equalTo: categoryHighlight4.centerYAnchor).isActive = true
-        debbieDLbl.font = UIFont(name: "AmericanTypewriter-Bold", size: self.view.frame.width * 0.025)
+        categoryDivider8.heightAnchor.constraint(equalTo: scrollView.heightAnchor, multiplier: 0.6).isActive = true
         
         amountPresentedLbl3.leftAnchor.constraint(equalTo: categoryHighlight4.leftAnchor, constant: 0).isActive = true
         amountPresentedLbl3.topAnchor.constraint(equalTo: categoryDivider7.bottomAnchor, constant: 0).isActive = true
-        amountPresentedLbl3.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.395).isActive = true
+        amountPresentedLbl3.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.315).isActive = true
         amountPresentedLbl3.heightAnchor.constraint(equalTo: scrollView.heightAnchor, multiplier: 0.075).isActive = true
         amountPresentedLbl3.font = UIFont(name: "AmericanTypewriter-Bold", size: self.view.frame.width * 0.022)
         
         amountPresentedTextField5.leftAnchor.constraint(equalTo: categoryDivider8.leftAnchor, constant: 0).isActive = true
         amountPresentedTextField5.centerYAnchor.constraint(equalTo: amountPresentedLbl3.centerYAnchor).isActive = true
-        amountPresentedTextField5.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.3).isActive = true
-        amountPresentedTextField5.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
+        amountPresentedTextField5.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.21).isActive = true
+        amountPresentedTextField5.heightAnchor.constraint(equalTo: scrollView.heightAnchor, multiplier: 0.075).isActive = true
         
         amountPresentedTextField6.leftAnchor.constraint(equalTo: amountPresentedTextField5.rightAnchor, constant: 0.5).isActive = true
         amountPresentedTextField6.centerYAnchor.constraint(equalTo: amountPresentedLbl3.centerYAnchor).isActive = true
-        amountPresentedTextField6.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.255).isActive = true
-        amountPresentedTextField6.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
-        
-        annaCLbl.leftAnchor.constraint(equalTo: amountPresentedTextField6.leftAnchor, constant: 1).isActive = true
-        annaCLbl.centerYAnchor.constraint(equalTo: categoryHighlight4.centerYAnchor).isActive = true
-        annaCLbl.font = UIFont(name: "AmericanTypewriter-Bold", size: self.view.frame.width * 0.025)
+        amountPresentedTextField6.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.21).isActive = true
+        amountPresentedTextField6.heightAnchor.constraint(equalTo: scrollView.heightAnchor, multiplier: 0.075).isActive = true
         
         amountAcceptedLbl3.centerXAnchor.constraint(equalTo: amountPresentedLbl3.centerXAnchor).isActive = true
         amountAcceptedLbl3.topAnchor.constraint(equalTo: amountPresentedLbl3.bottomAnchor, constant: 0.5).isActive = true
-        amountAcceptedLbl3.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.395).isActive = true
+        amountAcceptedLbl3.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.315).isActive = true
         amountAcceptedLbl3.heightAnchor.constraint(equalTo: scrollView.heightAnchor, multiplier: 0.075).isActive = true
         amountAcceptedLbl3.font = UIFont(name: "AmericanTypewriter-Bold", size: self.view.frame.width * 0.022)
         
         amountAcceptedTextField5.leftAnchor.constraint(equalTo: categoryDivider8.leftAnchor, constant: 0).isActive = true
         amountAcceptedTextField5.centerYAnchor.constraint(equalTo: amountAcceptedLbl3.centerYAnchor).isActive = true
-        amountAcceptedTextField5.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.3).isActive = true
+        amountAcceptedTextField5.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.21).isActive = true
         amountAcceptedTextField5.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
         
         amountAcceptedTextField6.leftAnchor.constraint(equalTo: amountAcceptedTextField5.rightAnchor, constant: 0.5).isActive = true
         amountAcceptedTextField6.centerYAnchor.constraint(equalTo: amountAcceptedLbl3.centerYAnchor).isActive = true
-        amountAcceptedTextField6.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.255).isActive = true
+        amountAcceptedTextField6.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.21).isActive = true
         amountAcceptedTextField6.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
         
         percentOfDollarAmountScheduledLbl3.centerXAnchor.constraint(equalTo: amountAcceptedLbl3.centerXAnchor).isActive = true
         percentOfDollarAmountScheduledLbl3.topAnchor.constraint(equalTo: amountAcceptedLbl3.bottomAnchor, constant: 0.5).isActive = true
-        percentOfDollarAmountScheduledLbl3.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.395).isActive = true
+        percentOfDollarAmountScheduledLbl3.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.315).isActive = true
         percentOfDollarAmountScheduledLbl3.heightAnchor.constraint(equalTo: scrollView.heightAnchor, multiplier: 0.075).isActive = true
         percentOfDollarAmountScheduledLbl3.font = UIFont(name: "AmericanTypewriter-Bold", size: self.view.frame.width * 0.022)
         
         percentOfDollarAmountScheduledTextField5.leftAnchor.constraint(equalTo: categoryDivider8.leftAnchor, constant: 0).isActive = true
         percentOfDollarAmountScheduledTextField5.centerYAnchor.constraint(equalTo: percentOfDollarAmountScheduledLbl3.centerYAnchor).isActive = true
-        percentOfDollarAmountScheduledTextField5.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.3).isActive = true
+        percentOfDollarAmountScheduledTextField5.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.21).isActive = true
         percentOfDollarAmountScheduledTextField5.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
         
         percentOfDollarAmountScheduledTextField6.leftAnchor.constraint(equalTo: percentOfDollarAmountScheduledTextField5.rightAnchor, constant: 0.5).isActive = true
         percentOfDollarAmountScheduledTextField6.centerYAnchor.constraint(equalTo: percentOfDollarAmountScheduledLbl3.centerYAnchor).isActive = true
-        percentOfDollarAmountScheduledTextField6.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.255).isActive = true
+        percentOfDollarAmountScheduledTextField6.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.21).isActive = true
         percentOfDollarAmountScheduledTextField6.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
         
         numberPatientsPresentedTreatmentLbl3.centerXAnchor.constraint(equalTo: percentOfDollarAmountScheduledLbl3.centerXAnchor).isActive = true
         numberPatientsPresentedTreatmentLbl3.topAnchor.constraint(equalTo: percentOfDollarAmountScheduledLbl3.bottomAnchor, constant: 0.5).isActive = true
-        numberPatientsPresentedTreatmentLbl3.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.395).isActive = true
+        numberPatientsPresentedTreatmentLbl3.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.315).isActive = true
         numberPatientsPresentedTreatmentLbl3.heightAnchor.constraint(equalTo: scrollView.heightAnchor, multiplier: 0.075).isActive = true
         numberPatientsPresentedTreatmentLbl3.font = UIFont(name: "AmericanTypewriter-Bold", size: self.view.frame.width * 0.022)
         
         numberPatientsPresentedTreatmentTextField5.leftAnchor.constraint(equalTo: categoryDivider8.leftAnchor, constant: 0).isActive = true
         numberPatientsPresentedTreatmentTextField5.centerYAnchor.constraint(equalTo: numberPatientsPresentedTreatmentLbl3.centerYAnchor).isActive = true
-        numberPatientsPresentedTreatmentTextField5.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.3).isActive = true
+        numberPatientsPresentedTreatmentTextField5.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.21).isActive = true
         numberPatientsPresentedTreatmentTextField5.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
         
         numberPatientsPresentedTreatmentTextField6.leftAnchor.constraint(equalTo: numberPatientsPresentedTreatmentTextField5.rightAnchor, constant: 0.5).isActive = true
         numberPatientsPresentedTreatmentTextField6.centerYAnchor.constraint(equalTo: numberPatientsPresentedTreatmentLbl3.centerYAnchor).isActive = true
-        numberPatientsPresentedTreatmentTextField6.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.255).isActive = true
+        numberPatientsPresentedTreatmentTextField6.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.21).isActive = true
         numberPatientsPresentedTreatmentTextField6.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
         
         numberPatientsAccpetedTreatmentLbl3.centerXAnchor.constraint(equalTo: numberPatientsPresentedTreatmentLbl3.centerXAnchor).isActive = true
         numberPatientsAccpetedTreatmentLbl3.topAnchor.constraint(equalTo: numberPatientsPresentedTreatmentLbl3.bottomAnchor, constant: 0.5).isActive = true
-        numberPatientsAccpetedTreatmentLbl3.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.395).isActive = true
+        numberPatientsAccpetedTreatmentLbl3.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.315).isActive = true
         numberPatientsAccpetedTreatmentLbl3.heightAnchor.constraint(equalTo: scrollView.heightAnchor, multiplier: 0.075).isActive = true
         numberPatientsAccpetedTreatmentLbl3.font = UIFont(name: "AmericanTypewriter-Bold", size: self.view.frame.width * 0.022)
         
         numberPatientsAcceptedTreatmentTextField5.leftAnchor.constraint(equalTo: categoryDivider8.leftAnchor, constant: 0).isActive = true
         numberPatientsAcceptedTreatmentTextField5.centerYAnchor.constraint(equalTo: numberPatientsAccpetedTreatmentLbl3.centerYAnchor).isActive = true
-        numberPatientsAcceptedTreatmentTextField5.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.3).isActive = true
+        numberPatientsAcceptedTreatmentTextField5.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.21).isActive = true
         numberPatientsAcceptedTreatmentTextField5.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
         
         numberPatientsAcceptedTreatmentTextField6.leftAnchor.constraint(equalTo: numberPatientsAcceptedTreatmentTextField5.rightAnchor, constant: 0.5).isActive = true
         numberPatientsAcceptedTreatmentTextField6.centerYAnchor.constraint(equalTo: numberPatientsAccpetedTreatmentLbl3.centerYAnchor).isActive = true
-        numberPatientsAcceptedTreatmentTextField6.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.255).isActive = true
+        numberPatientsAcceptedTreatmentTextField6.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.21).isActive = true
         numberPatientsAcceptedTreatmentTextField6.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
         
         percentPatientsAcceptedTreatmentLbl3.centerXAnchor.constraint(equalTo: numberPatientsAccpetedTreatmentLbl3.centerXAnchor).isActive = true
         percentPatientsAcceptedTreatmentLbl3.topAnchor.constraint(equalTo: numberPatientsAccpetedTreatmentLbl3.bottomAnchor, constant: 0.5).isActive = true
-        percentPatientsAcceptedTreatmentLbl3.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.395).isActive = true
+        percentPatientsAcceptedTreatmentLbl3.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.315).isActive = true
         percentPatientsAcceptedTreatmentLbl3.heightAnchor.constraint(equalTo: scrollView.heightAnchor, multiplier: 0.075).isActive = true
         percentPatientsAcceptedTreatmentLbl3.font = UIFont(name: "AmericanTypewriter-Bold", size: self.view.frame.width * 0.022)
         
         percentPatientsAcceptedTreatmentTextField5.leftAnchor.constraint(equalTo: categoryDivider8.leftAnchor, constant: 0).isActive = true
         percentPatientsAcceptedTreatmentTextField5.centerYAnchor.constraint(equalTo: percentPatientsAcceptedTreatmentLbl3.centerYAnchor).isActive = true
-        percentPatientsAcceptedTreatmentTextField5.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.3).isActive = true
+        percentPatientsAcceptedTreatmentTextField5.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.21).isActive = true
         percentPatientsAcceptedTreatmentTextField5.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
         
         percentPatientsAcceptedTreatmentTextField6.leftAnchor.constraint(equalTo: percentPatientsAcceptedTreatmentTextField5.rightAnchor, constant: 0.5).isActive = true
         percentPatientsAcceptedTreatmentTextField6.centerYAnchor.constraint(equalTo: percentPatientsAcceptedTreatmentLbl3.centerYAnchor).isActive = true
-        percentPatientsAcceptedTreatmentTextField6.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.255).isActive = true
+        percentPatientsAcceptedTreatmentTextField6.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.21).isActive = true
         percentPatientsAcceptedTreatmentTextField6.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
         
         providersLbl.leftAnchor.constraint(equalTo: treatmentCoordinatorsLbl3.leftAnchor).isActive = true
@@ -4559,8 +4880,40 @@ class MainViewController: UIViewController {
         dollarAmountSameDayTreatmentTextField2.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.255).isActive = true
         dollarAmountSameDayTreatmentTextField2.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
         
-        percentAppointmentsKeptLbl.centerXAnchor.constraint(equalTo: dollarAmountSameDayTreatmentLbl.centerXAnchor).isActive = true
-        percentAppointmentsKeptLbl.topAnchor.constraint(equalTo: dollarAmountSameDayTreatmentLbl.bottomAnchor, constant: 0.5).isActive = true
+        scheduledAppointmentsLbl.centerXAnchor.constraint(equalTo: dollarAmountSameDayTreatmentLbl.centerXAnchor).isActive = true
+        scheduledAppointmentsLbl.topAnchor.constraint(equalTo: dollarAmountSameDayTreatmentLbl.bottomAnchor, constant: 0.5).isActive = true
+        scheduledAppointmentsLbl.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.395).isActive = true
+        scheduledAppointmentsLbl.heightAnchor.constraint(equalTo: scrollView.heightAnchor, multiplier: 0.075).isActive = true
+        scheduledAppointmentsLbl.font = UIFont(name: "AmericanTypewriter-Bold", size: self.view.frame.width * 0.022)
+        
+        scheduledAppointmentsTextField1.leftAnchor.constraint(equalTo: categoryDivider10.leftAnchor, constant: 0).isActive = true
+        scheduledAppointmentsTextField1.centerYAnchor.constraint(equalTo: scheduledAppointmentsLbl.centerYAnchor).isActive = true
+        scheduledAppointmentsTextField1.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.3).isActive = true
+        scheduledAppointmentsTextField1.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
+        
+        scheduledAppointmentsTextField2.leftAnchor.constraint(equalTo: scheduledAppointmentsTextField1.rightAnchor, constant: 0.5).isActive = true
+        scheduledAppointmentsTextField2.centerYAnchor.constraint(equalTo: scheduledAppointmentsLbl.centerYAnchor).isActive = true
+        scheduledAppointmentsTextField2.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.255).isActive = true
+        scheduledAppointmentsTextField2.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
+        
+        appointmentsKeptLbl.centerXAnchor.constraint(equalTo: scheduledAppointmentsLbl.centerXAnchor).isActive = true
+        appointmentsKeptLbl.topAnchor.constraint(equalTo: scheduledAppointmentsLbl.bottomAnchor, constant: 0.5).isActive = true
+        appointmentsKeptLbl.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.395).isActive = true
+        appointmentsKeptLbl.heightAnchor.constraint(equalTo: scrollView.heightAnchor, multiplier: 0.075).isActive = true
+        appointmentsKeptLbl.font = UIFont(name: "AmericanTypewriter-Bold", size: self.view.frame.width * 0.022)
+        
+        appointmentsKeptTextField1.leftAnchor.constraint(equalTo: categoryDivider10.leftAnchor, constant: 0).isActive = true
+        appointmentsKeptTextField1.centerYAnchor.constraint(equalTo: appointmentsKeptLbl.centerYAnchor).isActive = true
+        appointmentsKeptTextField1.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.3).isActive = true
+        appointmentsKeptTextField1.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
+        
+        appointmentsKeptTextField2.leftAnchor.constraint(equalTo: appointmentsKeptTextField1.rightAnchor, constant: 0.5).isActive = true
+        appointmentsKeptTextField2.centerYAnchor.constraint(equalTo: appointmentsKeptLbl.centerYAnchor).isActive = true
+        appointmentsKeptTextField2.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.255).isActive = true
+        appointmentsKeptTextField2.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
+        
+        percentAppointmentsKeptLbl.centerXAnchor.constraint(equalTo: appointmentsKeptLbl.centerXAnchor).isActive = true
+        percentAppointmentsKeptLbl.topAnchor.constraint(equalTo: appointmentsKeptLbl.bottomAnchor, constant: 0.5).isActive = true
         percentAppointmentsKeptLbl.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.395).isActive = true
         percentAppointmentsKeptLbl.heightAnchor.constraint(equalTo: scrollView.heightAnchor, multiplier: 0.075).isActive = true
         percentAppointmentsKeptLbl.font = UIFont(name: "AmericanTypewriter-Bold", size: self.view.frame.width * 0.022)
@@ -4712,7 +5065,7 @@ class MainViewController: UIViewController {
         dollarAmountSameDayTreatmentTextField4.leftAnchor.constraint(equalTo: dollarAmountSameDayTreatmentTextField3.rightAnchor, constant: 0.5).isActive = true
         dollarAmountSameDayTreatmentTextField4.centerYAnchor.constraint(equalTo: dollarAmountSameDayTreatmentLbl2.centerYAnchor).isActive = true
         dollarAmountSameDayTreatmentTextField4.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.255).isActive = true
-        dollarAmountSameDayTreatmentTextField4.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
+        dollarAmountSameDayTreatmentTextField4.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true 
         
         percentAppointmentsKeptLbl2.centerXAnchor.constraint(equalTo: dollarAmountSameDayTreatmentLbl2.centerXAnchor).isActive = true
         percentAppointmentsKeptLbl2.topAnchor.constraint(equalTo: dollarAmountSameDayTreatmentLbl2.bottomAnchor, constant: 0.5).isActive = true
@@ -5290,6 +5643,48 @@ class MainViewController: UIViewController {
         retentionRateTextField9.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.22).isActive = true
         retentionRateTextField9.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
         
+        amountPresentedTextField7.leftAnchor.constraint(equalTo: amountPresentedTextField6.rightAnchor, constant: 0.5).isActive = true
+        amountPresentedTextField7.centerYAnchor.constraint(equalTo: amountPresentedLbl3.centerYAnchor).isActive = true
+        amountPresentedTextField7.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.21).isActive = true
+        amountPresentedTextField7.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
+        
+        debbieDLbl.centerXAnchor.constraint(equalTo: amountPresentedTextField5.centerXAnchor, constant: 0).isActive = true
+        debbieDLbl.centerYAnchor.constraint(equalTo: categoryHighlight4.centerYAnchor).isActive = true
+        debbieDLbl.font = UIFont(name: "AmericanTypewriter-Bold", size: self.view.frame.width * 0.025)
+        
+        annaCLbl.centerXAnchor.constraint(equalTo: amountPresentedTextField6.centerXAnchor, constant: 0).isActive = true
+        annaCLbl.centerYAnchor.constraint(equalTo: categoryHighlight4.centerYAnchor).isActive = true
+        annaCLbl.font = UIFont(name: "AmericanTypewriter-Bold", size: self.view.frame.width * 0.025)
+        
+        jessicaLbl.centerXAnchor.constraint(equalTo: amountPresentedTextField7.centerXAnchor, constant: 0).isActive = true
+        jessicaLbl.centerYAnchor.constraint(equalTo: categoryHighlight4.centerYAnchor).isActive = true
+        jessicaLbl.font = UIFont(name: "AmericanTypewriter-Bold", size: self.view.frame.width * 0.025)
+        
+        amountAcceptedTextField7.leftAnchor.constraint(equalTo: amountAcceptedTextField6.rightAnchor, constant: 0.5).isActive = true
+        amountAcceptedTextField7.centerYAnchor.constraint(equalTo: amountAcceptedLbl3.centerYAnchor).isActive = true
+        amountAcceptedTextField7.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.21).isActive = true
+        amountAcceptedTextField7.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
+        
+        percentOfDollarAmountScheduledTextField7.leftAnchor.constraint(equalTo: percentOfDollarAmountScheduledTextField6.rightAnchor, constant: 0.5).isActive = true
+        percentOfDollarAmountScheduledTextField7.centerYAnchor.constraint(equalTo: percentOfDollarAmountScheduledLbl3.centerYAnchor).isActive = true
+        percentOfDollarAmountScheduledTextField7.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.21).isActive = true
+        percentOfDollarAmountScheduledTextField7.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
+        
+        numberPatientsPresentedTreatmentTextField7.leftAnchor.constraint(equalTo: numberPatientsPresentedTreatmentTextField6.rightAnchor, constant: 0.5).isActive = true
+        numberPatientsPresentedTreatmentTextField7.centerYAnchor.constraint(equalTo: numberPatientsPresentedTreatmentLbl3.centerYAnchor).isActive = true
+        numberPatientsPresentedTreatmentTextField7.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.21).isActive = true
+        numberPatientsPresentedTreatmentTextField7.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
+        
+        numberPatientsAcceptedTreatmentTextField7.leftAnchor.constraint(equalTo: numberPatientsAcceptedTreatmentTextField6.rightAnchor, constant: 0.5).isActive = true
+        numberPatientsAcceptedTreatmentTextField7.centerYAnchor.constraint(equalTo: numberPatientsAccpetedTreatmentLbl3.centerYAnchor).isActive = true
+        numberPatientsAcceptedTreatmentTextField7.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.21).isActive = true
+        numberPatientsAcceptedTreatmentTextField7.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
+     
+        percentPatientsAcceptedTreatmentTextField7.leftAnchor.constraint(equalTo: percentPatientsAcceptedTreatmentTextField6.rightAnchor, constant: 0.5).isActive = true
+        percentPatientsAcceptedTreatmentTextField7.centerYAnchor.constraint(equalTo: percentPatientsAcceptedTreatmentLbl3.centerYAnchor).isActive = true
+        percentPatientsAcceptedTreatmentTextField7.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.21).isActive = true
+        percentPatientsAcceptedTreatmentTextField7.heightAnchor.constraint(equalTo: netProdutionLbl.heightAnchor, multiplier: 1).isActive = true
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -5365,18 +5760,22 @@ class MainViewController: UIViewController {
         
         hollyAmountPresentedRef.observe((.value)) { (snap: DataSnapshot) in
             self.amountPresentedTextField1.placeholder = ("$" + (snap.value as AnyObject).description)
+            self.sessionHollyAmountPresentedValue = (snap.value as! Double)
         }
         hollyAmountAcceptedRef.observe((.value)) { (snap: DataSnapshot) in
             self.amountAcceptedTextField1.placeholder = ("$" + (snap.value as AnyObject).description)
+            self.sessionHollyAmountAcceptedValue = (snap.value as! Double)
         }
         hollyPercentOfDollarAmountScheduledRef.observe((.value)) { (snap: DataSnapshot) in
             self.percentOfDollarAmountScheduledTextField1.placeholder = ("%" + (snap.value as AnyObject).description)
         }
         hollyNumberOfPatientsPresentedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
             self.numberPatientsPresentedTreatmentTextField1.placeholder = (snap.value as AnyObject).description
+            self.sessionHollyPatientsPresesntedValue = (snap.value as! Double)
         }
         hollyNumberOfPatientsAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
             self.numberPatientsAcceptedTreatmentTextField1.placeholder = (snap.value as AnyObject).description
+            self.sessionHollyPatientsAcceptedValue = (snap.value as! Double)
         }
         hollyPercentOfPatientAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
             self.percentPatientsAcceptedTreatmentTextField1.placeholder = ("%" + (snap.value as AnyObject).description)
@@ -5384,18 +5783,22 @@ class MainViewController: UIViewController {
         
         sydneyAmountPresentedRef.observe((.value)) { (snap: DataSnapshot) in
             self.amountPresentedTextField2.placeholder = ("$" + (snap.value as AnyObject).description)
+            self.sessionSydneyAmountPresentedValue = (snap.value as! Double)
         }
         sydneyAmountAcceptedRef.observe((.value)) { (snap: DataSnapshot) in
             self.amountAcceptedTextField2.placeholder = ("$" + (snap.value as AnyObject).description)
+            self.sessionSydneyAmountAcceptedValue = (snap.value as! Double)
         }
         sydneyPercentOfDollarAmountScheduledRef.observe((.value)) { (snap: DataSnapshot) in
             self.percentOfDollarAmountScheduledTextField2.placeholder = ("%" + (snap.value as AnyObject).description)
         }
         sydneyNumberOfPatientsPresentedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
             self.numberPatientsPresentedTreatmentTextField2.placeholder = (snap.value as AnyObject).description
+            self.sessionSydneyPatientsPresesntedValue = (snap.value as! Double)
         }
         sydneyNumberOfPatientsAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
             self.numberPatientsAcceptedTreatmentTextField2.placeholder = (snap.value as AnyObject).description
+            self.sessionSydneyPatientsAcceptedValue = (snap.value as! Double)
         }
         sydneyPercentOfPatientAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
             self.percentPatientsAcceptedTreatmentTextField2.placeholder = ("%" + (snap.value as AnyObject).description)
@@ -5403,18 +5806,22 @@ class MainViewController: UIViewController {
         
         amandaAmountPresentedRef.observe((.value)) { (snap: DataSnapshot) in
             self.amountPresentedTextField3.placeholder = ("$" + (snap.value as AnyObject).description)
+            self.sessionAmandaAmountPresentedValue = (snap.value as! Double)
         }
         amandaAmountAcceptedRef.observe((.value)) { (snap: DataSnapshot) in
             self.amountAcceptedTextField3.placeholder = ("$" + (snap.value as AnyObject).description)
+            self.sessionAmandaAmountAcceptedValue = (snap.value as! Double)
         }
         amandaPercentOfDollarAmountScheduledRef.observe((.value)) { (snap: DataSnapshot) in
             self.percentOfDollarAmountScheduledTextField3.placeholder = ("%" + (snap.value as AnyObject).description)
         }
         amandaNumberOfPatientsPresentedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
             self.numberPatientsPresentedTreatmentTextField3.placeholder = (snap.value as AnyObject).description
+            self.sessionAmandaPatientsPresesntedValue = (snap.value as! Double)
         }
         amandaNumberOfPatientsAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
             self.numberPatientsAcceptedTreatmentTextField3.placeholder = (snap.value as AnyObject).description
+            self.sessionAmandaPatientsAcceptedValue = (snap.value as! Double)
         }
         amandaPercentOfPatientAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
             self.percentPatientsAcceptedTreatmentTextField3.placeholder = ("%" + (snap.value as AnyObject).description)
@@ -5422,18 +5829,22 @@ class MainViewController: UIViewController {
         
         ashleyAmountPresentedRef.observe((.value)) { (snap: DataSnapshot) in
             self.amountPresentedTextField4.placeholder = ("$" + (snap.value as AnyObject).description)
+            self.sessionAshleyGAmountPresentedValue = (snap.value as! Double)
         }
         ashleyAmountAcceptedRef.observe((.value)) { (snap: DataSnapshot) in
             self.amountAcceptedTextField4.placeholder = ("$" + (snap.value as AnyObject).description)
+            self.sessionAshleyGAmountAcceptedValue = (snap.value as! Double)
         }
         ashleyPercentOfDollarAmountScheduledRef.observe((.value)) { (snap: DataSnapshot) in
             self.percentOfDollarAmountScheduledTextField4.placeholder = ("%" + (snap.value as AnyObject).description)
         }
         ashleyNumberOfPatientsPresentedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
             self.numberPatientsPresentedTreatmentTextField4.placeholder = (snap.value as AnyObject).description
+            self.sessionAshleyGPatientsPresesntedValue = (snap.value as! Double)
         }
         ashleyNumberOfPatientsAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
             self.numberPatientsAcceptedTreatmentTextField4.placeholder = (snap.value as AnyObject).description
+            self.sessionAshleyGPatientsAcceptedValue = (snap.value as! Double)
         }
         ashleyPercentOfPatientAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
             self.percentPatientsAcceptedTreatmentTextField4.placeholder = ("%" + (snap.value as AnyObject).description)
@@ -5441,18 +5852,22 @@ class MainViewController: UIViewController {
         
         debbieAmountPresentedRef.observe((.value)) { (snap: DataSnapshot) in
             self.amountPresentedTextField5.placeholder = ("$" + (snap.value as AnyObject).description)
+            self.sessionDebbieDAmountPresentedValue = (snap.value as! Double)
         }
         debbieAmountAcceptedRef.observe((.value)) { (snap: DataSnapshot) in
             self.amountAcceptedTextField5.placeholder = ("$" + (snap.value as AnyObject).description)
+            self.sessionDebbieDAmountAcceptedValue = (snap.value as! Double)
         }
         debbiePercentOfDollarAmountScheduledRef.observe((.value)) { (snap: DataSnapshot) in
             self.percentOfDollarAmountScheduledTextField5.placeholder = ("%" + (snap.value as AnyObject).description)
         }
         debbieNumberOfPatientsPresentedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
             self.numberPatientsPresentedTreatmentTextField5.placeholder = (snap.value as AnyObject).description
+            self.sessionDebbieDPatientsPresesntedValue = (snap.value as! Double)
         }
         debbieNumberOfPatientsAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
             self.numberPatientsAcceptedTreatmentTextField5.placeholder = (snap.value as AnyObject).description
+            self.sessionDebbieDPatientsAcceptedValue = (snap.value as! Double)
         }
         debbiePercentOfPatientAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
             self.percentPatientsAcceptedTreatmentTextField5.placeholder = ("%" + (snap.value as AnyObject).description)
@@ -5460,31 +5875,62 @@ class MainViewController: UIViewController {
         
         annaAmountPresentedRef.observe((.value)) { (snap: DataSnapshot) in
             self.amountPresentedTextField6.placeholder = ("$" + (snap.value as AnyObject).description)
+            self.sessionAnnaCAmountPresentedValue = (snap.value as! Double)
         }
         annaAmountAcceptedRef.observe((.value)) { (snap: DataSnapshot) in
             self.amountAcceptedTextField6.placeholder = ("$" + (snap.value as AnyObject).description)
+            self.sessionAnnaCAmountAcceptedValue = (snap.value as! Double)
         }
         annaPercentOfDollarAmountScheduledRef.observe((.value)) { (snap: DataSnapshot) in
             self.percentOfDollarAmountScheduledTextField6.placeholder = ("%" + (snap.value as AnyObject).description)
         }
         annaNumberOfPatientsPresentedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
             self.numberPatientsPresentedTreatmentTextField6.placeholder = (snap.value as AnyObject).description
+            self.sessionAnnaCPatientsPresesntedValue = (snap.value as! Double)
         }
         annaNumberOfPatientsAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
             self.numberPatientsAcceptedTreatmentTextField6.placeholder = (snap.value as AnyObject).description
+            self.sessionAnnaCPatientsAcceptedValue = (snap.value as! Double)
         }
         annaPercentOfPatientAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
             self.percentPatientsAcceptedTreatmentTextField6.placeholder = ("%" + (snap.value as AnyObject).description)
         }
+        
+        jessicaAmountPresentedRef.observe((.value)) { (snap: DataSnapshot) in
+            self.amountPresentedTextField7.placeholder = ("$" + (snap.value as AnyObject).description)
+            self.sessionJessicaAmountPresentedValue = (snap.value as! Double)
+        }
+        jessicaAmountAcceptedRef.observe((.value)) { (snap: DataSnapshot) in
+            self.amountAcceptedTextField7.placeholder = ("$" + (snap.value as AnyObject).description)
+            self.sessionJessicaAmountAcceptedValue = (snap.value as! Double)
+        }
+        jessicaPercentOfDollarAmountScheduledRef.observe((.value)) { (snap: DataSnapshot) in
+            self.percentOfDollarAmountScheduledTextField7.placeholder = ("%" + (snap.value as AnyObject).description)
+        }
+        jessicaNumberOfPatientsPresentedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
+            self.numberPatientsPresentedTreatmentTextField7.placeholder = (snap.value as AnyObject).description
+            self.sessionJessicaPatientsPresesntedValue = (snap.value as! Double)
+        }
+        jessicaNumberOfPatientsAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
+            self.numberPatientsAcceptedTreatmentTextField7.placeholder = (snap.value as AnyObject).description
+            self.sessionJessicaPatientsAcceptedValue = (snap.value as! Double)
+        }
+        jessicaPercentOfPatientAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
+            self.percentPatientsAcceptedTreatmentTextField7.placeholder = ("%" + (snap.value as AnyObject).description)
+        }
+        
+    
         
         drVGoalRef.observe((.value)) { (snap: DataSnapshot) in
             self.goalTextField1.placeholder = ("$" + (snap.value as AnyObject).description)
         }
         drVNetProductionRef.observe((.value)) { (snap: DataSnapshot) in
             self.netProductionTextField3.placeholder = ("$" + (snap.value as AnyObject).description)
+            self.sessionDrVNetProductionValue = (snap.value as! Int)
         }
         drVDaysWorkedRef.observe((.value)) { (snap: DataSnapshot) in
             self.daysWorkedTextField1.placeholder = (snap.value as AnyObject).description
+            self.sessionDrVDaysWorkedValue = (snap.value as! Int)
         }
         drVProductionPerDayRef.observe((.value)) { (snap: DataSnapshot) in
             self.productionPerDayTextField1.placeholder = ("$" + (snap.value as AnyObject).description)
@@ -5494,6 +5940,14 @@ class MainViewController: UIViewController {
         }
         drVDollarAmountSameDayTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
             self.dollarAmountSameDayTreatmentTextField1.placeholder = ("$" + (snap.value as AnyObject).description)
+        }
+        drVScheduledAppointmentsRef.observe((.value)) { (snap: DataSnapshot) in
+            self.scheduledAppointmentsTextField1.placeholder = (snap.value as AnyObject).description
+            self.sessionDrVScheduledAppointmentsValue = (snap.value as! Double)
+        }
+        drVAppointmentsKeptRef.observe((.value)) { (snap: DataSnapshot) in
+            self.appointmentsKeptTextField1.placeholder = (snap.value as AnyObject).description
+            self.sessionDrVAppointmentsKeptValue = (snap.value as! Double)
         }
         drVPercentAppointmentsKeptRef.observe((.value)) { (snap: DataSnapshot) in
             self.percentAppointmentsKeptTextField1.placeholder = ("%" + (snap.value as AnyObject).description)
@@ -5507,9 +5961,11 @@ class MainViewController: UIViewController {
         }
         drMcreeNetProductionRef.observe((.value)) { (snap: DataSnapshot) in
             self.netProductionTextField4.placeholder = ("$" + (snap.value as AnyObject).description)
+            self.sessionDrMcreeNetProductionValue = (snap.value as! Int)
         }
         drMcreeDaysWorkedRef.observe((.value)) { (snap: DataSnapshot) in
             self.daysWorkedTextField2.placeholder = (snap.value as AnyObject).description
+            self.sessionDrMcreeDaysWorkedValue = (snap.value as! Int)
         }
         drMcreeProductionPerDayRef.observe((.value)) { (snap: DataSnapshot) in
             self.productionPerDayTextField2.placeholder = ("$" + (snap.value as AnyObject).description)
@@ -5519,6 +5975,14 @@ class MainViewController: UIViewController {
         }
         drMcreeDollarAmountSameDayTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
             self.dollarAmountSameDayTreatmentTextField2.placeholder = ("$" + (snap.value as AnyObject).description)
+        }
+        drMcreeScheduledAppointmentsRef.observe((.value)) { (snap: DataSnapshot) in
+            self.scheduledAppointmentsTextField2.placeholder = (snap.value as AnyObject).description
+            self.sessionDrMcreeScheduledAppointmentsValue = (snap.value as! Double)
+        }
+        drMcreeAppointmentsKeptRef.observe((.value)) { (snap: DataSnapshot) in
+            self.appointmentsKeptTextField2.placeholder = (snap.value as AnyObject).description
+            self.sessionDrMcreeAppointmentsKeptValue = (snap.value as! Double)
         }
         drMcreePercentAppointmentsKeptRef.observe((.value)) { (snap: DataSnapshot) in
             self.percentAppointmentsKeptTextField2.placeholder = ("%" + (snap.value as AnyObject).description)
@@ -5532,9 +5996,11 @@ class MainViewController: UIViewController {
         }
         drOrzaNetProductionRef.observe((.value)) { (snap: DataSnapshot) in
             self.netProductionTextField5.placeholder = ("$" + (snap.value as AnyObject).description)
+            self.sessionDrOrzaNetProductionValue = (snap.value as! Int)
         }
         drOrzaDaysWorkedRef.observe((.value)) { (snap: DataSnapshot) in
             self.daysWorkedTextField3.placeholder = (snap.value as AnyObject).description
+            self.sessionDrOrzaDaysWorkedValue = (snap.value as! Int)
         }
         drOrzaProductionPerDayRef.observe((.value)) { (snap: DataSnapshot) in
             self.productionPerDayTextField3.placeholder = ("$" + (snap.value as AnyObject).description)
@@ -5544,6 +6010,14 @@ class MainViewController: UIViewController {
         }
         drOrzaDollarAmountSameDayTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
             self.dollarAmountSameDayTreatmentTextField3.placeholder = ("$" + (snap.value as AnyObject).description)
+        }
+        drOrzaScheduledAppointmentsRef.observe((.value)) { (snap: DataSnapshot) in
+            self.scheduledAppointmentsTextField3.placeholder = (snap.value as AnyObject).description
+            self.sessionDrOrzaScheduledAppointmentsValue = (snap.value as! Double)
+        }
+        drOrzaAppointmentsKeptRef.observe((.value)) { (snap: DataSnapshot) in
+            self.appointmentsKeptTextField3.placeholder = (snap.value as AnyObject).description
+            self.sessionDrOrzaAppointmentsKeptValue = (snap.value as! Double)
         }
         drOrzaPercentAppointmentsKeptRef.observe((.value)) { (snap: DataSnapshot) in
             self.percentAppointmentsKeptTextField3.placeholder = ("%" + (snap.value as AnyObject).description)
@@ -5557,9 +6031,11 @@ class MainViewController: UIViewController {
         }
         drFranNetProductionRef.observe((.value)) { (snap: DataSnapshot) in
             self.netProductionTextField6.placeholder = ("$" + (snap.value as AnyObject).description)
+            self.sessionDrFranNetProductionValue = (snap.value as! Int)
         }
         drFranDaysWorkedRef.observe((.value)) { (snap: DataSnapshot) in
             self.daysWorkedTextField4.placeholder = (snap.value as AnyObject).description
+            self.sessionDrFranDaysWorkedValue = (snap.value as! Int)
         }
         drFranProductionPerDayRef.observe((.value)) { (snap: DataSnapshot) in
             self.productionPerDayTextField4.placeholder = ("$" + (snap.value as AnyObject).description)
@@ -5569,6 +6045,14 @@ class MainViewController: UIViewController {
         }
         drFranDollarAmountSameDayTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
             self.dollarAmountSameDayTreatmentTextField4.placeholder = ("$" + (snap.value as AnyObject).description)
+        }
+        drFranScheduledAppointmentsRef.observe((.value)) { (snap: DataSnapshot) in
+            self.scheduledAppointmentsTextField4.placeholder = (snap.value as AnyObject).description
+            self.sessionDrFranScheduledAppointmentsValue = (snap.value as! Double)
+        }
+        drFranAppointmentsKeptRef.observe((.value)) { (snap: DataSnapshot) in
+            self.appointmentsKeptTextField4.placeholder = (snap.value as AnyObject).description
+            self.sessionDrFranAppointmentsKeptValue = (snap.value as! Double)
         }
         drFranPercentAppointmentsKeptRef.observe((.value)) { (snap: DataSnapshot) in
             self.percentAppointmentsKeptTextField4.placeholder = ("%" + (snap.value as AnyObject).description)
@@ -5776,6 +6260,8 @@ class MainViewController: UIViewController {
         ashleyRetentionRateRef.observe((.value)) { (snap: DataSnapshot) in
             self.retentionRateTextField9.placeholder = ("%" + (snap.value as AnyObject).description)
         }
+        
+        
     } // end of view appear
     
     @objc func handleSubmition() {
@@ -5831,7 +6317,7 @@ class MainViewController: UIViewController {
             let roundedPercent = Double(round(10*percentage)/10)
             self.woodstockPercentCollectionsToNetProductionRef.setValue(roundedPercent)
         }
-        woodstockNetProductionRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+        woodstockProductionPerActiveChairRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
             let value = Int(self.sessionWoodstockNetProductionsValue / 6)
             self.woodstockProductionPerActiveChairRef.setValue(value)
         }
@@ -5868,7 +6354,386 @@ class MainViewController: UIViewController {
         }
         kennesawDollarAmountRefundedToPatientsRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
             if self.amountRefundedToPatientsTextField2.text != "" {
-                // continue here!!
+                self.kennesawDollarAmountRefundedToPatientsRef.setValue(Int(snap.value as! Int) + Int(self.amountRefundedToPatientsTextField2.text!)!)
+                self.amountRefundedToPatientsTextField2.text = ""
+            }
+        }
+        kennesawPercentOTCToTotalCollectionsRef.observe((.value)) { (snap: DataSnapshot) in
+            let percentage = Double(Double(self.sessionKennesawOTCCollectionsValue / self.sessionKennesawCollectionsValue) * 100)
+            let roundedPercent = Double(round(10*percentage)/10)
+            self.kennesawPercentOTCToTotalCollectionsRef.setValue(roundedPercent)
+        }
+        kennesawPercentInsuranceToTotalCollectionsRef.observe((.value)) { (snap: DataSnapshot) in
+            let percentage = Double(Double(self.sessionKennesawInsuranceCollectionsValue / self.sessionKennesawCollectionsValue) * 100)
+            let roundedPercent = Double(round(10*percentage)/10)
+            self.kennesawPercentInsuranceToTotalCollectionsRef.setValue(roundedPercent)
+        }
+        kennesawPercentCollectionsToNetProductionRef.observe((.value)) { (snap: DataSnapshot) in
+            let percentage = Double(Double(self.sessionKennesawCollectionsValue / self.sessionKennesawNetProductionValue) * 100)
+            let roundedPercent = Double(round(10*percentage)/10)
+            self.kennesawPercentCollectionsToNetProductionRef.setValue(roundedPercent)
+        }
+        kennesawProductionPerActiveChairRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            let value = Int(self.sessionKennesawNetProductionValue / 10)
+            self.kennesawProductionPerActiveChairRef.setValue(value)
+        }
+        
+        hollyAmountPresentedRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            if self.amountPresentedTextField1.text != "" {
+                self.hollyAmountPresentedRef.setValue((snap.value as! Int) + Int(self.amountPresentedTextField1.text!)!)
+                self.amountPresentedTextField1.text = ""
+            }
+        }
+        hollyAmountAcceptedRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            if self.amountAcceptedTextField1.text != "" {
+                self.hollyAmountAcceptedRef.setValue((snap.value as! Int) + Int(self.amountAcceptedTextField1.text!)!)
+                self.amountAcceptedTextField1.text = ""
+            }
+        }
+        hollyPercentOfDollarAmountScheduledRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            let percentage = Double(Double(self.sessionHollyAmountAcceptedValue / self.sessionHollyAmountPresentedValue) * 100)
+            let roundedPercent = Double(round(10*percentage)/10)
+            self.hollyPercentOfDollarAmountScheduledRef.setValue(roundedPercent)
+        }
+        hollyNumberOfPatientsPresentedTreatmentRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            if self.numberPatientsPresentedTreatmentTextField1.text != "" {
+                self.hollyNumberOfPatientsPresentedTreatmentRef.setValue((snap.value as! Int) + Int(self.numberPatientsPresentedTreatmentTextField1.text!)!)
+                self.numberPatientsPresentedTreatmentTextField1.text = ""
+            }
+        }
+        hollyNumberOfPatientsAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
+            if self.numberPatientsAcceptedTreatmentTextField1.text != "" {
+                self.hollyNumberOfPatientsAcceptedTreatmentRef.setValue((snap.value as! Int) + Int(self.numberPatientsAcceptedTreatmentTextField1.text!)!)
+                self.numberPatientsAcceptedTreatmentTextField1.text = ""
+            }
+        }
+        hollyPercentOfPatientAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
+            let percentage = Double(Double(self.sessionHollyPatientsAcceptedValue / self.sessionHollyPatientsPresesntedValue) * 100)
+            let roundedPercent = Double(round(10*percentage)/10)
+            self.hollyPercentOfPatientAcceptedTreatmentRef.setValue(roundedPercent)
+        }
+        
+        sydneyAmountPresentedRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            if self.amountPresentedTextField2.text != "" {
+                self.sydneyAmountPresentedRef.setValue((snap.value as! Int) + Int(self.amountPresentedTextField2.text!)!)
+                self.amountPresentedTextField2.text = ""
+            }
+        }
+        sydneyAmountAcceptedRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            if self.amountAcceptedTextField2.text != "" {
+                self.sydneyAmountAcceptedRef.setValue((snap.value as! Int) + Int(self.amountAcceptedTextField2.text!)!)
+                self.amountAcceptedTextField2.text = ""
+            }
+        }
+        sydneyPercentOfDollarAmountScheduledRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            let percentage = Double(Double(self.sessionSydneyAmountAcceptedValue / self.sessionSydneyAmountPresentedValue) * 100)
+            let roundedPercent = Double(round(10*percentage)/10)
+            self.sydneyPercentOfDollarAmountScheduledRef.setValue(roundedPercent)
+        }
+        sydneyNumberOfPatientsPresentedTreatmentRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            if self.numberPatientsPresentedTreatmentTextField2.text != "" {
+                self.sydneyNumberOfPatientsPresentedTreatmentRef.setValue((snap.value as! Int) + Int(self.numberPatientsPresentedTreatmentTextField2.text!)!)
+                self.numberPatientsPresentedTreatmentTextField2.text = ""
+            }
+        }
+        sydneyNumberOfPatientsAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
+            if self.numberPatientsAcceptedTreatmentTextField2.text != "" {
+                self.sydneyNumberOfPatientsAcceptedTreatmentRef.setValue((snap.value as! Int) + Int(self.numberPatientsAcceptedTreatmentTextField2.text!)!)
+                self.numberPatientsAcceptedTreatmentTextField2.text = ""
+            }
+        }
+        sydneyPercentOfPatientAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
+            let percentage = Double(Double(self.sessionSydneyPatientsAcceptedValue / self.sessionSydneyPatientsPresesntedValue) * 100)
+            let roundedPercent = Double(round(10*percentage)/10)
+            self.sydneyPercentOfPatientAcceptedTreatmentRef.setValue(roundedPercent)
+        }
+        
+        amandaAmountPresentedRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            if self.amountPresentedTextField3.text != "" {
+                self.amandaAmountPresentedRef.setValue((snap.value as! Int) + Int(self.amountPresentedTextField3.text!)!)
+                self.amountPresentedTextField3.text = ""
+            }
+        }
+        amandaAmountAcceptedRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            if self.amountAcceptedTextField3.text != "" {
+                self.amandaAmountAcceptedRef.setValue((snap.value as! Int) + Int(self.amountAcceptedTextField3.text!)!)
+                self.amountAcceptedTextField3.text = ""
+            }
+        }
+        amandaPercentOfDollarAmountScheduledRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            let percentage = Double(Double(self.sessionAmandaAmountAcceptedValue / self.sessionAmandaAmountPresentedValue) * 100)
+            let roundedPercent = Double(round(10*percentage)/10)
+            self.amandaPercentOfDollarAmountScheduledRef.setValue(roundedPercent)
+        }
+        amandaNumberOfPatientsPresentedTreatmentRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            if self.numberPatientsPresentedTreatmentTextField3.text != "" {
+                self.amandaNumberOfPatientsPresentedTreatmentRef.setValue((snap.value as! Int) + Int(self.numberPatientsPresentedTreatmentTextField3.text!)!)
+                self.numberPatientsPresentedTreatmentTextField3.text = ""
+            }
+        }
+        amandaNumberOfPatientsAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
+            if self.numberPatientsAcceptedTreatmentTextField3.text != "" {
+                self.amandaNumberOfPatientsAcceptedTreatmentRef.setValue((snap.value as! Int) + Int(self.numberPatientsAcceptedTreatmentTextField3.text!)!)
+                self.numberPatientsAcceptedTreatmentTextField3.text = ""
+            }
+        }
+        amandaPercentOfPatientAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
+            let percentage = Double(Double(self.sessionAmandaPatientsAcceptedValue / self.sessionAmandaPatientsPresesntedValue) * 100)
+            let roundedPercent = Double(round(10*percentage)/10)
+            self.amandaPercentOfPatientAcceptedTreatmentRef.setValue(roundedPercent)
+        }
+        
+        ashleyAmountPresentedRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            if self.amountPresentedTextField4.text != "" {
+                self.ashleyAmountPresentedRef.setValue((snap.value as! Int) + Int(self.amountPresentedTextField4.text!)!)
+                self.amountPresentedTextField4.text = ""
+            }
+        }
+        ashleyAmountAcceptedRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            if self.amountAcceptedTextField4.text != "" {
+                self.ashleyAmountAcceptedRef.setValue((snap.value as! Int) + Int(self.amountAcceptedTextField4.text!)!)
+                self.amountAcceptedTextField4.text = ""
+            }
+        }
+        ashleyPercentOfDollarAmountScheduledRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            let percentage = Double(Double(self.sessionAshleyGAmountAcceptedValue / self.sessionAshleyGAmountPresentedValue) * 100)
+            let roundedPercent = Double(round(10*percentage)/10)
+            self.ashleyPercentOfDollarAmountScheduledRef.setValue(roundedPercent)
+        }
+        ashleyNumberOfPatientsPresentedTreatmentRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            if self.numberPatientsPresentedTreatmentTextField4.text != "" {
+                self.ashleyNumberOfPatientsPresentedTreatmentRef.setValue((snap.value as! Int) + Int(self.numberPatientsPresentedTreatmentTextField4.text!)!)
+                self.numberPatientsPresentedTreatmentTextField4.text = ""
+            }
+        }
+        ashleyNumberOfPatientsAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
+            if self.numberPatientsAcceptedTreatmentTextField4.text != "" {
+                self.ashleyNumberOfPatientsAcceptedTreatmentRef.setValue((snap.value as! Int) + Int(self.numberPatientsAcceptedTreatmentTextField4.text!)!)
+                self.numberPatientsAcceptedTreatmentTextField4.text = ""
+            }
+        }
+        ashleyPercentOfPatientAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
+            let percentage = Double(Double(self.sessionAshleyGPatientsAcceptedValue / self.sessionAshleyGPatientsPresesntedValue) * 100)
+            let roundedPercent = Double(round(10*percentage)/10)
+            self.ashleyPercentOfPatientAcceptedTreatmentRef.setValue(roundedPercent)
+        }
+        
+        debbieAmountPresentedRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            if self.amountPresentedTextField5.text != "" {
+                self.debbieAmountPresentedRef.setValue((snap.value as! Int) + Int(self.amountPresentedTextField5.text!)!)
+                self.amountPresentedTextField5.text = ""
+            }
+        }
+        debbieAmountAcceptedRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            if self.amountAcceptedTextField5.text != "" {
+                self.debbieAmountAcceptedRef.setValue((snap.value as! Int) + Int(self.amountAcceptedTextField5.text!)!)
+                self.amountAcceptedTextField5.text = ""
+            }
+        }
+        debbiePercentOfDollarAmountScheduledRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            let percentage = Double(Double(self.sessionDebbieDAmountAcceptedValue / self.sessionDebbieDAmountPresentedValue) * 100)
+            let roundedPercent = Double(round(10*percentage)/10)
+            self.debbiePercentOfDollarAmountScheduledRef.setValue(roundedPercent)
+        }
+        debbieNumberOfPatientsPresentedTreatmentRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            if self.numberPatientsPresentedTreatmentTextField5.text != "" {
+                self.debbieNumberOfPatientsPresentedTreatmentRef.setValue((snap.value as! Int) + Int(self.numberPatientsPresentedTreatmentTextField5.text!)!)
+                self.numberPatientsPresentedTreatmentTextField5.text = ""
+            }
+        }
+        debbieNumberOfPatientsAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
+            if self.numberPatientsAcceptedTreatmentTextField5.text != "" {
+                self.debbieNumberOfPatientsAcceptedTreatmentRef.setValue((snap.value as! Int) + Int(self.numberPatientsAcceptedTreatmentTextField5.text!)!)
+                self.numberPatientsAcceptedTreatmentTextField5.text = ""
+            }
+        }
+        debbiePercentOfPatientAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
+            let percentage = Double(Double(self.sessionDebbieDPatientsAcceptedValue / self.sessionDebbieDPatientsPresesntedValue) * 100)
+            let roundedPercent = Double(round(10*percentage)/10)
+            self.debbiePercentOfPatientAcceptedTreatmentRef.setValue(roundedPercent)
+        }
+        
+        annaAmountPresentedRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            if self.amountPresentedTextField6.text != "" {
+                self.annaAmountPresentedRef.setValue((snap.value as! Int) + Int(self.amountPresentedTextField6.text!)!)
+                self.amountPresentedTextField6.text = ""
+            }
+        }
+        annaAmountAcceptedRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            if self.amountAcceptedTextField6.text != "" {
+                self.annaAmountAcceptedRef.setValue((snap.value as! Int) + Int(self.amountAcceptedTextField6.text!)!)
+                self.amountAcceptedTextField6.text = ""
+            }
+        }
+        annaPercentOfDollarAmountScheduledRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            let percentage = Double(Double(self.sessionAnnaCAmountAcceptedValue / self.sessionAnnaCAmountPresentedValue) * 100)
+            let roundedPercent = Double(round(10*percentage)/10)
+            self.annaPercentOfDollarAmountScheduledRef.setValue(roundedPercent)
+        }
+        annaNumberOfPatientsPresentedTreatmentRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            if self.numberPatientsPresentedTreatmentTextField6.text != "" {
+                self.annaNumberOfPatientsPresentedTreatmentRef.setValue((snap.value as! Int) + Int(self.numberPatientsPresentedTreatmentTextField6.text!)!)
+                self.numberPatientsPresentedTreatmentTextField6.text = ""
+            }
+        }
+        annaNumberOfPatientsAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
+            if self.numberPatientsAcceptedTreatmentTextField6.text != "" {
+                self.annaNumberOfPatientsAcceptedTreatmentRef.setValue((snap.value as! Int) + Int(self.numberPatientsAcceptedTreatmentTextField6.text!)!)
+                self.numberPatientsAcceptedTreatmentTextField6.text = ""
+            }
+        }
+        annaPercentOfPatientAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
+            let percentage = Double(Double(self.sessionAnnaCPatientsAcceptedValue / self.sessionAnnaCPatientsPresesntedValue) * 100)
+            let roundedPercent = Double(round(10*percentage)/10)
+            self.annaPercentOfPatientAcceptedTreatmentRef.setValue(roundedPercent)
+        }
+        
+        jessicaAmountPresentedRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            if self.amountPresentedTextField7.text != "" {
+                self.jessicaAmountPresentedRef.setValue((snap.value as! Int) + Int(self.amountPresentedTextField7.text!)!)
+                self.amountPresentedTextField7.text = ""
+            }
+        }
+        jessicaAmountAcceptedRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            if self.amountAcceptedTextField7.text != "" {
+                self.jessicaAmountAcceptedRef.setValue((snap.value as! Int) + Int(self.amountAcceptedTextField7.text!)!)
+                self.amountAcceptedTextField7.text = ""
+            }
+        }
+        jessicaPercentOfDollarAmountScheduledRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            let percentage = Double(Double(self.sessionJessicaAmountAcceptedValue / self.sessionJessicaAmountPresentedValue) * 100)
+            let roundedPercent = Double(round(10*percentage)/10)
+            self.jessicaPercentOfDollarAmountScheduledRef.setValue(roundedPercent)
+        }
+        jessicaNumberOfPatientsPresentedTreatmentRef.observeSingleEvent(of: (.value)) { (snap: DataSnapshot) in
+            if self.numberPatientsPresentedTreatmentTextField7.text != "" {
+                self.jessicaNumberOfPatientsPresentedTreatmentRef.setValue((snap.value as! Int) + Int(self.numberPatientsPresentedTreatmentTextField7.text!)!)
+                self.numberPatientsPresentedTreatmentTextField7.text = ""
+            }
+        }
+        jessicaNumberOfPatientsAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
+            if self.numberPatientsAcceptedTreatmentTextField7.text != "" {
+                self.jessicaNumberOfPatientsAcceptedTreatmentRef.setValue((snap.value as! Int) + Int(self.numberPatientsAcceptedTreatmentTextField7.text!)!)
+                self.numberPatientsAcceptedTreatmentTextField7.text = ""
+            }
+        }
+        jessicaPercentOfPatientAcceptedTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
+            let percentage = Double(Double(self.sessionJessicaPatientsAcceptedValue / self.sessionJessicaPatientsPresesntedValue) * 100)
+            let roundedPercent = Double(round(10*percentage)/10)
+            self.jessicaPercentOfPatientAcceptedTreatmentRef.setValue(roundedPercent)
+        }
+        
+        drVGoalRef.observe((.value)) { (snap: DataSnapshot) in
+            if self.goalTextField1.text != "" {
+                self.drVGoalRef.setValue((snap.value as! Int) + Int(self.goalTextField1.text!)!)
+                self.goalTextField1.text = ""
+            }
+        }
+        drVNetProductionRef.observe((.value)) { (snap: DataSnapshot) in
+            if self.netProductionTextField3.text != "" {
+                self.drVNetProductionRef.setValue((snap.value as! Int) + Int(self.netProductionTextField3.text!)!)
+                self.netProductionTextField3.text = ""
+            }
+        }
+        drVDaysWorkedRef.observe((.value)) { (snap: DataSnapshot) in
+            if self.daysWorkedTextField1.text != "" {
+                self.drVDaysWorkedRef.setValue((snap.value as! Int) + Int(self.daysWorkedTextField1.text!)!)
+                self.daysWorkedTextField1.text = ""
+            }
+        }
+        drVProductionPerDayRef.observe((.value)) { (snap: DataSnapshot) in
+           let result = Int(Int(self.sessionDrVNetProductionValue) / Int(self.sessionDrVDaysWorkedValue))
+            self.drVProductionPerDayRef.setValue(result)
+        }
+        drVProductionPerHourRef.observe((.value)) { (snap: DataSnapshot) in
+            let hours = Int(Int(self.sessionDrVDaysWorkedValue) * 8)
+            let result = Int(Int(self.sessionDrVNetProductionValue) / hours)
+            self.drVProductionPerHourRef.setValue(result)
+        }
+        drVDollarAmountSameDayTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
+            if self.dollarAmountSameDayTreatmentTextField1.text != "" {
+                self.drVDollarAmountSameDayTreatmentRef.setValue((snap.value as! Int) + Int(self.dollarAmountSameDayTreatmentTextField1.text!)!)
+                self.dollarAmountSameDayTreatmentTextField1.text = ""
+            }
+        }
+        drVScheduledAppointmentsRef.observe((.value)) { (snap: DataSnapshot) in
+            if self.scheduledAppointmentsTextField1.text != "" {
+                self.drVScheduledAppointmentsRef.setValue((snap.value as! Int) + Int(self.scheduledAppointmentsTextField1.text!)!)
+                self.scheduledAppointmentsTextField1.text = ""
+            }
+        }
+        drVAppointmentsKeptRef.observe((.value)) { (snap: DataSnapshot) in
+            if self.appointmentsKeptTextField1.text != "" {
+                self.drVAppointmentsKeptRef.setValue((snap.value as! Int) + Int(self.appointmentsKeptTextField1.text!)!)
+                self.appointmentsKeptTextField1.text = ""
+            }
+        }
+        drVPercentAppointmentsKeptRef.observe((.value)) { (snap: DataSnapshot) in
+            let percentage = Double(Double(self.sessionDrVAppointmentsKeptValue / self.sessionDrVScheduledAppointmentsValue) * 100)
+            let roundedPercent = Double(round(10*percentage)/10)
+            self.drVPercentAppointmentsKeptRef.setValue(roundedPercent)
+        }
+        drVRetentionRateRef.observe((.value)) { (snap: DataSnapshot) in
+            if self.retentionRateTextField1.text != "" {
+                self.drVRetentionRateRef.setValue(Int(self.retentionRateTextField1.text!)!)
+                self.retentionRateTextField1.text = ""
+            }
+        }
+        
+        drMcreeGoalRef.observe((.value)) { (snap: DataSnapshot) in
+            if self.goalTextField2.text != "" {
+                self.drMcreeGoalRef.setValue((snap.value as! Int) + Int(self.goalTextField2.text!)!)
+                self.goalTextField2.text = ""
+            }
+        }
+        drMcreeNetProductionRef.observe((.value)) { (snap: DataSnapshot) in // Continue on this line
+            if self.netProductionTextField3.text != "" {
+                self.drVNetProductionRef.setValue((snap.value as! Int) + Int(self.netProductionTextField3.text!)!)
+                self.netProductionTextField3.text = ""
+            }
+        }
+        drVDaysWorkedRef.observe((.value)) { (snap: DataSnapshot) in
+            if self.daysWorkedTextField1.text != "" {
+                self.drVDaysWorkedRef.setValue((snap.value as! Int) + Int(self.daysWorkedTextField1.text!)!)
+                self.daysWorkedTextField1.text = ""
+            }
+        }
+        drVProductionPerDayRef.observe((.value)) { (snap: DataSnapshot) in
+            let result = Int(Int(self.sessionDrVNetProductionValue) / Int(self.sessionDrVDaysWorkedValue))
+            self.drVProductionPerDayRef.setValue(result)
+        }
+        drVProductionPerHourRef.observe((.value)) { (snap: DataSnapshot) in
+            let hours = Int(Int(self.sessionDrVDaysWorkedValue) * 8)
+            let result = Int(Int(self.sessionDrVNetProductionValue) / hours)
+            self.drVProductionPerHourRef.setValue(result)
+        }
+        drVDollarAmountSameDayTreatmentRef.observe((.value)) { (snap: DataSnapshot) in
+            if self.dollarAmountSameDayTreatmentTextField1.text != "" {
+                self.drVDollarAmountSameDayTreatmentRef.setValue((snap.value as! Int) + Int(self.dollarAmountSameDayTreatmentTextField1.text!)!)
+                self.dollarAmountSameDayTreatmentTextField1.text = ""
+            }
+        }
+        drVScheduledAppointmentsRef.observe((.value)) { (snap: DataSnapshot) in
+            if self.scheduledAppointmentsTextField1.text != "" {
+                self.drVScheduledAppointmentsRef.setValue((snap.value as! Int) + Int(self.scheduledAppointmentsTextField1.text!)!)
+                self.scheduledAppointmentsTextField1.text = ""
+            }
+        }
+        drVAppointmentsKeptRef.observe((.value)) { (snap: DataSnapshot) in
+            if self.appointmentsKeptTextField1.text != "" {
+                self.drVAppointmentsKeptRef.setValue((snap.value as! Int) + Int(self.appointmentsKeptTextField1.text!)!)
+                self.appointmentsKeptTextField1.text = ""
+            }
+        }
+        drVPercentAppointmentsKeptRef.observe((.value)) { (snap: DataSnapshot) in
+            let percentage = Double(Double(self.sessionDrVAppointmentsKeptValue / self.sessionDrVScheduledAppointmentsValue) * 100)
+            let roundedPercent = Double(round(10*percentage)/10)
+            self.drVPercentAppointmentsKeptRef.setValue(roundedPercent)
+        }
+        drVRetentionRateRef.observe((.value)) { (snap: DataSnapshot) in
+            if self.retentionRateTextField1.text != "" {
+                self.drVRetentionRateRef.setValue(Int(self.retentionRateTextField1.text!)!)
+                self.retentionRateTextField1.text = ""
             }
         }
         
