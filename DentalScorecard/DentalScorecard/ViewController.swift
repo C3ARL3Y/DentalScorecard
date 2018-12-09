@@ -11,6 +11,9 @@ import Firebase
 
 class ViewController: UIViewController {
     
+    let currentUser = UserDefaults.standard.string(forKey: "CurrentUser")
+    var currentUserPassword = UserDefaults.standard.string(forKey: "CurrentUserPassword")
+    
     let logo: UIImageView = {
         let imageView = UIImageView()
         
@@ -75,6 +78,21 @@ class ViewController: UIViewController {
         return button
     }()
     
+    let resetPasswordButton: UIButton = {
+        let button = UIButton()
+        
+        button.backgroundColor = UIColor.white
+        button.setTitle("Reset Password", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitleColor(UIColor.lightGray, for: .normal)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+        button.layer.cornerRadius = 5
+        button.layer.masksToBounds = true
+        button.addTarget(self, action: #selector(handleResetPassword), for: .touchUpInside)
+        
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "ViewController"
@@ -85,6 +103,7 @@ class ViewController: UIViewController {
         self.view.addSubview(inputsContainerView)
         self.view.addSubview(loginButton)
         self.view.addSubview(logo)
+        self.view.addSubview(resetPasswordButton)
      
         setupView()
         
@@ -121,6 +140,7 @@ class ViewController: UIViewController {
         emailTextField.widthAnchor.constraint(equalTo: inputsContainerView.widthAnchor).isActive = true
         emailTextFieldHeightAnchor = emailTextField.heightAnchor.constraint(equalTo: inputsContainerView.heightAnchor, multiplier: 1/2)
         emailTextFieldHeightAnchor?.isActive = true
+        emailTextField.autocapitalizationType = UITextAutocapitalizationType.none
         
         // Constraints need x,y,width,height
         emailSepartorView.leftAnchor.constraint(equalTo: inputsContainerView.leftAnchor).isActive = true
@@ -140,6 +160,11 @@ class ViewController: UIViewController {
         loginButton.widthAnchor.constraint(equalTo: inputsContainerView.widthAnchor).isActive = true
         loginButton.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.04).isActive = true
         
+        resetPasswordButton.centerXAnchor.constraint(equalTo: inputsContainerView.centerXAnchor).isActive = true
+        resetPasswordButton.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 10).isActive = true
+        resetPasswordButton.widthAnchor.constraint(equalTo: inputsContainerView.widthAnchor).isActive = true
+        resetPasswordButton.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.04).isActive = true
+        
     }
     
     @objc func handleLogin() {
@@ -153,6 +178,10 @@ class ViewController: UIViewController {
                 }
                 if error == nil {
                     print("Login Successful")
+                    UserDefaults.standard.set(self.emailTextField.text?.lowercased(), forKey: "CurrentUser")
+                    UserDefaults.standard.set(self.passwordTextField.text
+                        , forKey: "CurrentUserPassword")
+                    UserDefaults.standard.synchronize()
                     self.present(MainViewController(), animated: true) {}
                 } else {
                     let alert = UIAlertController(title: "Username and Password Required", message: "You Must Enter a Username and Password", preferredStyle: .alert)
@@ -162,6 +191,10 @@ class ViewController: UIViewController {
                 }
             }
         }//
+    }
+    
+    @objc func handleResetPassword() {
+        self.present(ResetPasswordViewController(), animated: true) {}
     }
     
 }

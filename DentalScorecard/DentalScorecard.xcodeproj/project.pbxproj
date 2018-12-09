@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		705DDFF502EFFAF8887F69B8 /* Pods_DentalScorecardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C04023AF9C435EDB1393BFD0 /* Pods_DentalScorecardTests.framework */; };
+		A510012221B7828800DEECF8 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A510012121B7828800DEECF8 /* ResetPasswordViewController.swift */; };
 		A52C5670218ECC0E009F86E4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C566F218ECC0E009F86E4 /* MainViewController.swift */; };
 		A54B88412191080800A7BF0B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54B88402191080800A7BF0B /* AuthService.swift */; };
 		A5768D47218377FC00F207B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5768D46218377FC00F207B4 /* GoogleService-Info.plist */; };
@@ -45,6 +46,8 @@
 		55FF5EB252E2640C708979EB /* Pods-DentalScorecard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DentalScorecard.release.xcconfig"; path = "Pods/Target Support Files/Pods-DentalScorecard/Pods-DentalScorecard.release.xcconfig"; sourceTree = "<group>"; };
 		7FB1711B2D0C097A3D9386E0 /* Pods_DentalScorecardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DentalScorecardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		968D6F575D91554B373EA3B2 /* Pods-DentalScorecardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DentalScorecardUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DentalScorecardUITests/Pods-DentalScorecardUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A509B95121AFB73F00699AAF /* DentalScorecard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DentalScorecard.entitlements; sourceTree = "<group>"; };
+		A510012121B7828800DEECF8 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		A52C566F218ECC0E009F86E4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A54B88402191080800A7BF0B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A5768D46218377FC00F207B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -135,6 +138,7 @@
 		A5EE6AA7216AB4D900AD731E /* DentalScorecard */ = {
 			isa = PBXGroup;
 			children = (
+				A509B95121AFB73F00699AAF /* DentalScorecard.entitlements */,
 				A5EE6AA8216AB4D900AD731E /* AppDelegate.swift */,
 				A52C566F218ECC0E009F86E4 /* MainViewController.swift */,
 				A5EE6AAA216AB4D900AD731E /* ViewController.swift */,
@@ -145,6 +149,7 @@
 				A5768D46218377FC00F207B4 /* GoogleService-Info.plist */,
 				A5796E0D218C0CE5001524FC /* LoginViewController.swift */,
 				A54B88402191080800A7BF0B /* AuthService.swift */,
+				A510012121B7828800DEECF8 /* ResetPasswordViewController.swift */,
 			);
 			path = DentalScorecard;
 			sourceTree = "<group>";
@@ -249,6 +254,11 @@
 				TargetAttributes = {
 					A5EE6AA4216AB4D900AD731E = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					A5EE6AB8216AB4DA00AD731E = {
 						CreatedOnToolsVersion = 10.0;
@@ -413,6 +423,7 @@
 				A5796E0E218C0CE5001524FC /* LoginViewController.swift in Sources */,
 				A5EE6AAB216AB4D900AD731E /* ViewController.swift in Sources */,
 				A54B88412191080800A7BF0B /* AuthService.swift in Sources */,
+				A510012221B7828800DEECF8 /* ResetPasswordViewController.swift in Sources */,
 				A5EE6AA9216AB4D900AD731E /* AppDelegate.swift in Sources */,
 				A52C5670218ECC0E009F86E4 /* MainViewController.swift in Sources */,
 			);
@@ -590,6 +601,7 @@
 			baseConfigurationReference = AFFE0A5EDE985E8FF2AA7EFB /* Pods-DentalScorecard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DentalScorecard/DentalScorecard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4BH5KRFJ6A;
 				INFOPLIST_FILE = DentalScorecard/Info.plist;
@@ -610,6 +622,7 @@
 			baseConfigurationReference = 55FF5EB252E2640C708979EB /* Pods-DentalScorecard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DentalScorecard/DentalScorecard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4BH5KRFJ6A;
 				INFOPLIST_FILE = DentalScorecard/Info.plist;
